@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",                 // Target ES6 for modern syntax
+    "module": "esnext",
+    "moduleResolution": "node",               // Use ESNext module system
+   "jsx": "react",               // Enable JSX with the new JSX transform
+    "strict": true,                   // Enable strict mode
+    "baseUrl": "./src",               // Set base URL for absolute imports
+    "paths": {
+      "@domain/*": ["domain/*"],
+      "@application/*": ["application/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@infrastructure/*": ["infrastructure/*"],
+      "@config/*": ["config/*"]
+    },
+    "lib": ["dom", "es2015"],         // Add DOM and ES2015 libs for browser and modern JS support
+    "types": ["react", "react-dom"],  // Include React-specific types for better JSX support
+    "allowSyntheticDefaultImports": true, // Allows default import syntax for non-ES modules
+    "esModuleInterop": true           // Allows interop with CommonJS modules
+  },
+  "include": ["src/**/*"],            // Include all files in the src folder
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist folders
+}
