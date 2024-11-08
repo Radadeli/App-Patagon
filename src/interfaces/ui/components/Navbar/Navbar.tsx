@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
+import logo from "/src/assets/images/logo.png";
 import styles from "./Navbar.module.scss";
 const Navbar: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleDropdown = (dropdown: string) => {
     setActiveDropdown(aciveDropdwon === dropwdonw ? null : dropdown);
@@ -13,10 +12,6 @@ const Navbar: React.FC = () => {
 
   const handleSignOut = () => {
     setIsLoggedIn(false);
-  };
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
   };
 
   return (
@@ -43,32 +38,15 @@ const Navbar: React.FC = () => {
           Contact
         </Link>
       </div>
-      <div className={styles.navbarAuths}>
-        <button onClick={toggleModal} className={styles.navbarButton}>
-          Sign In
-        </button>
-        <button onClick={toggleModal} className={styles.navbarButton}>
-          Sign Up
-        </button>
-      </div>
 
-      {isModalOpen && (
-        <div className={styles.navbarModal}>
-          <div className={styles.modalContent}>
-            <button
-              onClick={toggleModal}
-              className={styles.modalClose}
-            ></button>
-            <form>
-              <label> Email: </label>
-              <input type="email" placeholder="Enter your email" />
-              <label> Password: </label>
-              <input type="password" placeholder="Enter your password" />
-              <button type="submit"> Submit </button>
-            </form>
-          </div>
-        </div>
-      )}
+      <div className={styles.navbarAuths}>
+        <Link to="/signin" className={styles.signIn}>
+          Sign In
+        </Link>
+        <Link to="/signup" className={styles.signUp}>
+          Sign Up
+        </Link>
+      </div>
     </nav>
   );
 };
