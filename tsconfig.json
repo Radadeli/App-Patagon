@@ -14,7 +14,7 @@
       "@config/*": ["config/*"]
     },
     "lib": ["dom", "es2015"],         // Add DOM and ES2015 libs for browser and modern JS support
-    "types": ["react", "react-dom"],  // Include React-specific types for better JSX support
+    "types": ["react", "react-dom, node"],  // Include React-specific types for better JSX support
     "allowSyntheticDefaultImports": true, // Allows default import syntax for non-ES modules
     "esModuleInterop": true           // Allows interop with CommonJS modules
   },

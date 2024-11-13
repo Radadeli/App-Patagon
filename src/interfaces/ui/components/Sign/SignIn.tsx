@@ -10,9 +10,19 @@ const SignIn: React.FC = () => {
         </p>
         <form className={styles.form}>
           <label>Email:</label>
-          <input type="email" placeholder="Enter your email" required />
+          <input
+            className={styles.input}
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
           <label className={styles.password}>Password: </label>
-          <input type="password" placeholder="Enter your password" required />
+          <input
+            className={styles.input}
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
           <button className={styles.submitButton} type="submit">
             Sign In
           </button>
