@@ -43,14 +43,14 @@
             max-width: 600px;
 
         .heroTitle {
-            font-size: 3rem;
+        font-size: clamp(2rem, 2vw, 4rem);
             font-weight: bold;
             margin-bottom: 1rem;
         }
 
         .heroSubtitle {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
+        font-size: clamp(18px, 1vw, 2rem);           
+         margin-bottom: 2rem;
         }
 
         .heroButton {
