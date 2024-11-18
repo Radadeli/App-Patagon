@@ -62,10 +62,12 @@ const HeroSection: React.FC = () => {
         ))}
       </Swiper>
       <div className="heroContent">
-        <h2 className="heroTitle">Explore Patagonia with Crypto Saving</h2>
+        <h2 className="heroTitle">Explore Patagonia</h2>
         <p className="heroSubtitle">
-          Travel sustainably, pay with crypto, and experience exclusive
-          adventures
+          Experience the beauty of Patagonia with flexible payment options.
+          Embrace the future by paying with crypto to unlock exclusive savings
+          and perks, or stick to traditional methods. Travel sustainably, save
+          smartly, and discover unforgettable experiences tailored to you.
         </p>
         <button className="heroButton">Explore Experiences</button>
       </div>
