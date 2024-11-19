@@ -18,11 +18,13 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarLogo}>
-        <img
-          src={logo}
-          alt="Discover Patagon Logo"
-          className={styles.logoImage}
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Discover Patagon Logo"
+            className={styles.logoImage}
+          />
+        </Link>
       </div>
       <div className={styles.navbarLinks}>
         {/* Services Dropdown */}

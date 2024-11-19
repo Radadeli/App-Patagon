@@ -1,0 +1,116 @@
+.customizedPackages {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6;
+
+    h1,
+    h2 {
+        color: #4072d5;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 1rem 0;
+        color: #333;
+    }
+
+    .highlight {
+        color: #5e75be;
+        font-weight: bold;
+    }
+
+    .howItWorks ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            position: relative;
+
+            &::before {
+                content: '✔️';
+                position: absolute;
+                left: 0;
+            }
+
+            strong {
+                color: #243954;
+            }
+        }
+    }
+
+    .whyChooseUs .benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        div {
+            h3 {
+                color: #243954;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .getStarted {
+        text-align: center;
+        margin-top: 2rem;
+
+        .actionButtons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &.formButton {
+                    background-color: #5e75be;
+
+                    &:hover {
+                        background-color: #243954;
+                    }
+                }
+
+                &.whatsappButton {
+                    background-color: #25D366;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background-color: #1A9F54;
+                    }
+                }
+
+                &.emailButton {
+                    background-color: #333;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

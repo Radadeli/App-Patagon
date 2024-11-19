@@ -1,0 +1,118 @@
+.guidedTours {
+    font-family: "Arial", sans-serif;
+    color: #333;
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+        background: url("/src/assets/images/Madryn.png") center/cover no-repeat;
+        color: #fff;
+
+        .heroText {
+            max-width: 50%;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+        }
+
+        .heroImage {
+            width: 40%;
+            height: 300px;
+            background: url("/src/assets/images/Madryn3.png") center/cover no-repeat;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    /* Highlights Section */
+    .highlights {
+        padding: 3rem 2rem;
+        background-color: #f9f9f9;
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #222;
+        }
+
+        .highlightsGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+
+            .highlightCard {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem;
+                text-align: center;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+
+                img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: #007bff;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    /* Booking Section */
+    .booking {
+        padding: 3rem 2rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .ctaButton {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #0056b3;
+            }
+        }
+    }
+}

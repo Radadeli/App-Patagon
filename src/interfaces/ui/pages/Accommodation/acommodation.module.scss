@@ -1,0 +1,172 @@
+.accommodationPage {
+    font-family: "Arial", sans-serif;
+    color: #333;
+
+    .hero {
+        background: url("/src/assets/images/Madryn3.png") center/cover;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        width: 1520px;
+
+        .heroText {
+            // background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .exploreButton {
+                background: #007bff;
+                color: white;
+                padding: 0.7rem 1.5rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+
+                &:hover {
+                    background: #0056b3;
+                }
+            }
+        }
+    }
+
+    .features {
+        padding: 3rem 1.5rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .featuresGrid {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .featureItem {
+                max-width: 300px;
+                text-align: center;
+
+                img {
+                    width: 300px;
+                    border-radius: 5px;
+                    height: 250px;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .bookingSteps {
+        background: #f8f8f8;
+        padding: 3rem 1.5rem;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stepsList {
+            max-width: 700px;
+            margin: 0 auto;
+
+            li {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+
+                strong {
+                    color: #446181;
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        padding: 3rem 1.5rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .testimonialCards {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+
+            .testimonialCard {
+                background: #f8f8f8;
+                padding: 1.5rem;
+                border-radius: 8px;
+                max-width: 300px;
+                font-size: 1rem;
+
+                h4 {
+                    margin-top: 1rem;
+                    color: #007bff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .callToAction {
+        text-align: center;
+        padding: 3rem 1.5rem;
+        background: #254364;
+        color: white;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .bookNowButton {
+            background: white;
+            color: #007bff;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: #f8f8f8;
+            }
+        }
+    }
+}
