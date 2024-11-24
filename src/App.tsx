@@ -9,6 +9,8 @@ import CustomizedPackages from "./interfaces/ui/pages/Servicess/CustomizedPackag
 import Accommodation from "./interfaces/ui/pages/Accommodation/Accommodation";
 import Transport from "./interfaces/ui/pages/Transport/Transport";
 import Tours from "./interfaces/ui/pages/Tours/Tours";
+import Payments from "./interfaces/ui/pages/Payments/Payments";
+
 const App: React.FC = () => {
   return (
     <Router>
@@ -25,6 +27,7 @@ const App: React.FC = () => {
           ></Route>
           <Route path="/services/tours" element={<Tours />}></Route>
           <Route path="/services/transport" element={<Transport />}></Route>
+          <Route path="/services/payment" element={<Payments />}></Route>
           <Route path="/signin" element={<SignIn />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
         </Route>

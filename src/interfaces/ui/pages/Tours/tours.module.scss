@@ -34,7 +34,34 @@
         }
     }
 
-    /* Highlights Section */
+        .videoCard {
+            width: 100%;
+                height: 600px;
+                border-radius: 10px;
+                object-fit: cover;
+                cursor: pointer;
+        }
+                           .videoWrapper {
+                               position: relative;
+                               width: 100%;
+                               height: 100%;
+                           }
+            
+                           .playSignal {
+                               position: absolute;
+                               top: 50%;
+                               left: 50%;
+                               transform: translate(-50%, -50%);
+                               font-size: 2rem;
+                               color: white;
+                               background: rgba(0, 0, 0, 0.5);
+                               border-radius: 50%;
+                               padding: 0.5rem 1rem;
+                               z-index: 10;
+                               cursor: pointer;
+                               pointer-events: none; // Ensure the video receives the click, not the play signal
+                           }
+
     .highlights {
         padding: 3rem 2rem;
         background-color: #f9f9f9;
@@ -48,7 +75,7 @@
 
         .highlightsGrid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
 
             .highlightCard {
@@ -78,9 +105,13 @@
                 }
 
                 p {
+                    margin: 0;
                     font-size: 1rem;
                     line-height: 1.5;
                 }
+                                .readMoreButton {
+                                    margin-top: auto;
+                                }
             }
         }
     }
