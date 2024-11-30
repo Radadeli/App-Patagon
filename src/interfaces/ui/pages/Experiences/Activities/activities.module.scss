@@ -1,0 +1,78 @@
+.adventures {
+    font-family: "Arial", sans-serif;
+    color: #333;
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: url("/src/assets/images/adventure_hero.jpg") center/cover no-repeat;
+        color: #fff;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    /* Activities Section */
+    .activities {
+        padding: 3rem 2rem;
+        background-color: #f9f9f9;
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .activityGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+
+            .activityCard {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem;
+                text-align: center;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: #007bff;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}

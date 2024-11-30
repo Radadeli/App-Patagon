@@ -63,7 +63,6 @@ const Navbar: React.FC = () => {
               <Link to="/experiences/nature">Nature & Wildlife</Link>
               <Link to="/experiences/adventure">Adventure Activities</Link>
               <Link to="/experiences/cultural">Cultural & Culinary</Link>
-              <Link to="/experiences/relaxation">Relaxation & Scenery</Link>
               <Link to="/experiences/seasonal">
                 Special Seasonal Experiences
               </Link>

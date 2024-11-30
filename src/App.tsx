@@ -10,6 +10,10 @@ import Accommodation from "./interfaces/ui/pages/Accommodation/Accommodation";
 import Transport from "./interfaces/ui/pages/Transport/Transport";
 import Tours from "./interfaces/ui/pages/Tours/Tours";
 import Payments from "./interfaces/ui/pages/Payments/Payments";
+import Nature from "./interfaces/ui/pages/Experiences/Nature/Nature";
+import Culinary from "./interfaces/ui/pages/Experiences/Culinary/Culinary";
+import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities";
+import Season from "./interfaces/ui/pages/Experiences/Season/Season";
 
 const App: React.FC = () => {
   return (
@@ -28,6 +32,11 @@ const App: React.FC = () => {
           <Route path="/services/tours" element={<Tours />}></Route>
           <Route path="/services/transport" element={<Transport />}></Route>
           <Route path="/services/payment" element={<Payments />}></Route>
+          <Route path="/experiences/nature" element={<Nature />}></Route>
+          <Route path="/experiences/adventure" element={<Activities />}></Route>
+          <Route path="/experiences/cultural" element={<Culinary />}></Route>
+          <Route path="/experiences/seasonal" element={<Season />}></Route>
+
           <Route path="/signin" element={<SignIn />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
         </Route>

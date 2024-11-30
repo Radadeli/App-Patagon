@@ -1,0 +1,59 @@
+.experiences {
+    font-family: "Arial", sans-serif;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .experienceGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+
+        .experienceCard {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            .image {
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .content {
+                padding: 1.5rem;
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: #0056b3;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
