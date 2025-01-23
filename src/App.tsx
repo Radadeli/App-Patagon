@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Layout from "./interfaces/ui/components/Layout";
-import SignIn from "./interfaces/ui/components/Sign/SignIn";
-import SignUp from "./interfaces/ui/components/Sign/SignUp";
+import SignInModal from "./interfaces/ui/modals/SignInModal";
+import SignUpModal from "./interfaces/ui/modals/SignUpModal";
 import HomePage from "./interfaces/ui/pages/HomePage";
 import CustomizedPackages from "./interfaces/ui/pages/Servicess/CustomizedPackages";
 import Accommodation from "./interfaces/ui/pages/Accommodation/Accommodation";
@@ -37,8 +37,8 @@ const App: React.FC = () => {
           <Route path="/experiences/cultural" element={<Culinary />}></Route>
           <Route path="/experiences/seasonal" element={<Season />}></Route>
 
-          <Route path="/signin" element={<SignIn />}></Route>
-          <Route path="/signup" element={<SignUp />}></Route>
+          <Route path="/signin" element={<SignInModal />}></Route>
+          <Route path="/signup" element={<SignUpModal />}></Route>
         </Route>
       </Routes>
     </Router>
