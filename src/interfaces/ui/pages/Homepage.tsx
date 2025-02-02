@@ -4,7 +4,11 @@ import WhyUs from "../components/WhyUs/WhyUs";
 import Destinations from "../components/Destinations/Destinations";
 import Footer from "../components/Footer/Footer";
 
-const HomePage: React.FC = () => {
+interface HomePageProps {
+  isAuthenticated: boolean;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ isAuthenticated }) => {
   return (
     <div>
       <HeroSection />
