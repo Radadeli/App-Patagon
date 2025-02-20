@@ -42,6 +42,7 @@ const SignUpModal: React.FC = () => {
       }
     } catch (error) {
       console.log(error);
+      setErrorResponse("An unexpected error occurred. Please try again.");
     }
   }
 
@@ -53,7 +54,7 @@ const SignUpModal: React.FC = () => {
     <div className={styles.pageContainer}>
       <div className={styles.signUpContainer}>
         <h3 className={styles.title}>Sign Up</h3>
-        {!errorResponse && (
+        {errorResponse && (
           <div className={styles.error}>
             {" "}
             <p>{errorResponse}</p>{" "}

@@ -3,7 +3,7 @@ import styles from "./signIn.module.scss";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "/Users/ramir/OneDrive/Desktop/Viajes Patagon Crypto/App/App Patagon/src/interfaces/auth/AuthProvider";
 import { API_URL } from "/Users/ramir/OneDrive/Desktop/Viajes Patagon Crypto/App/App Patagon/src/interfaces/auth/constants";
-import { AuthResponsError } from "./types";
+import { AuthResponsError, AuthResponse } from "./types";
 
 interface SignInModalProps {
   onLogin: () => void;
@@ -35,6 +35,12 @@ const SignInModal: React.FC<SignInModalProps> = ({ onLogin }) => {
       if (response.ok) {
         console.log("Login succesfull");
         setErrorResponse("");
+        const json = (await response.json()) as AuthResponse;
+
+        if (json.body.accessToken && json.body.refreshToken) {
+          auth.saveUser(json);
+        }
+
         goTo("/");
       } else {
         console.log("Something went wrong");
