@@ -69,11 +69,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
   async function getUserInfo(AccessToken: string) {
     try {
-      const response = await fetch(`{API_URL}/user`, {
+      const response = await fetch(`${API_URL}/user`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`,
+          Authorization: `Bearer ${AccessToken}`,
         },
       });
 
