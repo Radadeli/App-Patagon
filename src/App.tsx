@@ -14,12 +14,13 @@ import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities"
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
 import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
-import HomePage from "./interfaces/ui/pages/HomePage";
+import HomePage from "./interfaces/ui/pages/Home";
 import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
 import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
 import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";
 import CryptoPayment from "./interfaces/ui/pages/WhyUs/CryptoPayment";
 import Security from "./interfaces/ui/pages/WhyUs/Security";
+import Home from "./interfaces/ui/pages/Home";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -29,10 +30,7 @@ const App: React.FC = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route
-              index
-              element={<HomePage isAuthenticated={isAuthenticated} />}
-            />
+            <Route index element={<Home isAuthenticated={isAuthenticated} />} />
             <Route
               path="/signin"
               element={<SignInModal onLogin={() => setIsAuthenticated(true)} />}
