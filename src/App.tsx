@@ -13,13 +13,14 @@ import Nature from "./interfaces/ui/pages/Experiences/Nature/Nature";
 import Culinary from "./interfaces/ui/pages/Experiences/Culinary/Culinary";
 import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities";
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
-import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
+// import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
-import Crypto from "./interfaces/ui/pages/WhyUs/crypto";
+import Crypto from "./interfaces/ui/pages/WhyUs/CryptoPayment";
 import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
 import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";
-import Adventures from "./interfaces/ui/pages/WhyUs/adventures";
+import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
 import Security from "./interfaces/ui/pages/WhyUs/Security";
+import CryptoPayment from "./interfaces/ui/pages/WhyUs/CryptoPayment";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -39,10 +40,10 @@ const App: React.FC = () => {
             ></Route>
             <Route path="/signup" element={<SignUpModal />}></Route>
 
-            <Route element={<ProtectedRoute isAuth={isAuthenticated} />} />
+            {/* <Route element={<ProtectedRoute isAuth={isAuthenticated} />} /> */}
 
             <Route path="/landscapes" element={<Landscapes />} />
-            <Route path="/cryptopayment" element={<Crypto />} />
+            <Route path="/cryptopayment" element={<CryptoPayment />} />
             <Route path="/itinerary" element={<Itineraries />} />
             <Route path="/adventures" element={<Adventures />} />
             <Route path="/security" element={<Security />} />

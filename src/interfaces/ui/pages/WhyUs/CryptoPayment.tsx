@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./crypto.module.scss";
 
-const Crypto: React.FC = () => {
+const CryptoPayment: React.FC = () => {
   return (
     <section className={styles.cryptoContainer}>
       <h1>Pay with Crypto — Modern, Secure & Borderless</h1>
@@ -41,4 +41,4 @@ const Crypto: React.FC = () => {
   );
 };
 
-export default Crypto;
+export default CryptoPayment;
