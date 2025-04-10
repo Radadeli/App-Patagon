@@ -14,12 +14,12 @@ import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities"
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
 import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
+import HomePage from "./interfaces/ui/pages/HomePage";
+import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
 import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
 import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";
-import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
-import Security from "./interfaces/ui/pages/WhyUs/Security";
 import CryptoPayment from "./interfaces/ui/pages/WhyUs/CryptoPayment";
-import HomePage from "./interfaces/ui/pages/HomePage";
+import Security from "./interfaces/ui/pages/WhyUs/Security";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
