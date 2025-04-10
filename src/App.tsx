@@ -15,6 +15,11 @@ import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities"
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
 import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
+import Crypto from "./interfaces/ui/pages/WhyUs/crypto";
+import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
+import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";
+import Adventures from "./interfaces/ui/pages/WhyUs/adventures";
+import Security from "./interfaces/ui/pages/WhyUs/Security";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -35,6 +40,12 @@ const App: React.FC = () => {
             <Route path="/signup" element={<SignUpModal />}></Route>
 
             <Route element={<ProtectedRoute isAuth={isAuthenticated} />} />
+
+            <Route path="/landscapes" element={<Landscapes />} />
+            <Route path="/cryptopayment" element={<Crypto />} />
+            <Route path="/itinerary" element={<Itineraries />} />
+            <Route path="/adventures" element={<Adventures />} />
+            <Route path="/security" element={<Security />} />
 
             <Route
               path="/services/packages"
