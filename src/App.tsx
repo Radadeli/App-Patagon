@@ -15,7 +15,6 @@ import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities"
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
 // import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
-import Crypto from "./interfaces/ui/pages/WhyUs/CryptoPayment";
 import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
 import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";
 import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
