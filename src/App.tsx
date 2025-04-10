@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./interfaces/ui/components/Layout";
 import SignInModal from "./interfaces/ui/modals/SignInModal";
 import SignUpModal from "./interfaces/ui/modals/SignUpModal";
-import HomePage from "./interfaces/ui/pages/HomePage";
 import CustomizedPackages from "./interfaces/ui/pages/Servicess/CustomizedPackages";
 import Accommodation from "./interfaces/ui/pages/Accommodation/Accommodation";
 import Transport from "./interfaces/ui/pages/Transport/Transport";
@@ -13,13 +12,14 @@ import Nature from "./interfaces/ui/pages/Experiences/Nature/Nature";
 import Culinary from "./interfaces/ui/pages/Experiences/Culinary/Culinary";
 import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities";
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
-// import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
+import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
 import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
 import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";
 import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
 import Security from "./interfaces/ui/pages/WhyUs/Security";
 import CryptoPayment from "./interfaces/ui/pages/WhyUs/CryptoPayment";
+import HomePage from "./interfaces/ui/pages/HomePage";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -39,7 +39,7 @@ const App: React.FC = () => {
             ></Route>
             <Route path="/signup" element={<SignUpModal />}></Route>
 
-            {/* <Route element={<ProtectedRoute isAuth={isAuthenticated} />} /> */}
+            <Route element={<ProtectedRoute isAuth={isAuthenticated} />} />
 
             <Route path="/landscapes" element={<Landscapes />} />
             <Route path="/cryptopayment" element={<CryptoPayment />} />
