@@ -14,7 +14,6 @@ import Activities from "./interfaces/ui/pages/Experiences/Activities/Activities"
 import Season from "./interfaces/ui/pages/Experiences/Season/Season";
 import { ProtectedRoute } from "./interfaces/ui/modals/ProtectedRoute";
 import AuthProvider from "./interfaces/auth/AuthProvider";
-import HomePage from "./interfaces/ui/pages/Home";
 import Adventures from "./interfaces/ui/pages/WhyUs/Adventures";
 import Landscapes from "./interfaces/ui/pages/WhyUs/Landscapes";
 import Itineraries from "./interfaces/ui/pages/WhyUs/Itineraries";

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./signIn.module.scss";
 import { Navigate, useNavigate } from "react-router-dom";
-import { useAuth } from "/Users/ramir/OneDrive/Desktop/Viajes Patagon Crypto/App/App Patagon/src/interfaces/auth/AuthProvider";
-import { API_URL } from "/Users/ramir/OneDrive/Desktop/Viajes Patagon Crypto/App/App Patagon/src/interfaces/auth/constants";
+import { useAuth } from "../../auth/AuthProvider";
+import { API_URL } from "../../auth/constants";
 import { AuthResponsError, AuthResponse } from "./types";
 
 interface SignInModalProps {
