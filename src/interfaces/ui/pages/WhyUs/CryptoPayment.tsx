@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./crypto.module.scss";
+import styles from "./CryptoPayment.module.scss";
 
 const CryptoPayment: React.FC = () => {
   return (
