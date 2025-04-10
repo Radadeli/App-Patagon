@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./adventures.module.scss";
+import styles from "./Adventures.module.scss";
 import adventure from "/src/assets/images/adventure.png";
 
 const Adventures: React.FC = () => {
