@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Security.module.scss";
+import styles from "./security.module.scss";
 import encrypted from "/src/assets/images/encrypted.jpg";
 
 const Security: React.FC = () => {

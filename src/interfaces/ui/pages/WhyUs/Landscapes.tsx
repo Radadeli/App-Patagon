@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Landscapes.module.scss";
+import styles from "./landscapes.module.scss";
 import glaciar from "/src/assets/images/glaciar.png";
 
 const Landscapes: React.FC = () => {

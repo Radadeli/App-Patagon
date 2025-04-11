@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Itineraries.module.scss";
+import styles from "./itineraries.module.scss";
 import itinerary from "/src/assets/images/itinerary.png";
 
 const Itineraries: React.FC = () => {
