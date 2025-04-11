@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Adventures.module.scss";
-import adventure from "/src/assets/images/adventure.png";
+import Adventure from "/src/assets/images/Adventure.png";
 
 const Adventures: React.FC = () => {
   return (
